@@ -1,0 +1,41 @@
+{
+    "masking_mode": "hybrid",
+    "spacy_model": "en_core_web_sm",
+    "regex_patterns": {
+    "EMAIL": [
+      "\\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,}\\b"
+    ],
+    "PHONE": [
+      "(?<!\\d)(?:\\+91[\\s-]?|0)?[6-9]\\d{9}(?!\\d)",
+      "\\b(?:\\+?1[\\s.-]?)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}\\b"
+    ],
+    "AADHAAR": [
+      "\\b\\d{4}\\s\\d{4}\\s\\d{4}\\b"
+    ],
+    "PAN": [
+      "\\b[A-Z]{5}[0-9]{4}[A-Z]\\b"
+    ],
+    "DATE": [
+      "\\b\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}\\b",
+      "\\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\s\\d{1,2},?\\s\\d{4}\\b"
+    ],
+    "TIME": [
+      "\\b\\d{1,2}:\\d{2}(?::\\d{2})?\\s?(?:AM|PM|am|pm)?\\b"
+    ],
+    "PINCODE": [
+      "\\b\\d{6}\\b"
+    ],
+    "ADDRESS": [
+      "\\b\\d{1,5}\\s(?:[A-Za-z0-9.,\\s]+)(Street|St|Road|Rd|Lane|Ln|Avenue|Ave|Boulevard|Blvd)\\b"
+    ],
+    "NAME": [
+      "(?i)\\b(?:my name is|i am|this is|name is)\\s+(?P<value>[A-Z][a-z]+(?:\\s[A-Z][a-z]+){0,2})\\b"
+    ],
+    "LOCATION": [
+      "(?i)\\b(?:in|from|at|based in|located in|near)\\s+(?P<value>[A-Z][a-z]+(?:\\s[A-Z][a-z]+){0,2})\\b"
+    ]},
+     
+
+    "ner_entities": ["PERSON", "GPE", "ORG", "DATE"]
+}
+

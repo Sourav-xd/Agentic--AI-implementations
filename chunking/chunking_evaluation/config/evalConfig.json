@@ -1,0 +1,29 @@
+{
+    "project_name": "RAG_Evaluation_Suite",
+    "module_name": "HR_doc",
+    "data_path": "input/rawData.txt",
+    "results_dir": "results",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunking": {
+        "rcts": {
+            "chunk_size": 500,
+            "chunk_overlap": 50,
+            "separators": ["\n\n", "\n", " ", ""]
+        },
+        "semantic": {
+            "distance_threshold": 0.5
+        },
+        "hybrid": {
+            "rcts_base_size": 150,
+            "rcts_base_overlap": 0,
+            "distance_threshold": 0.4
+        }
+    },
+    "retrieval": {
+        "top_k": 3,
+        "test_queries": [
+            "What are the main financial risks mentioned?",
+            "Summarize the Q3 revenue growth."
+        ]
+    }
+}

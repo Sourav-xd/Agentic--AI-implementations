@@ -1,0 +1,30 @@
+{
+    "project_name": "hr_chatbot",
+    "version": "1.0.0",
+    "phase": "1_Ingestion",
+    "llm_config": {
+        "provider": "google",
+        "model_name": "gemini-2.5-flash-lite",
+        "temperature": 0.0
+    },
+    "embedding_config": {
+        "provider": "huggingface",
+        "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+        "device": "cpu"
+    },
+    "paths": {
+        "input_rel": "input",
+        "raw_docs_rel": "input/raw_docs",
+        "chroma_db_rel": "input/chroma_db",
+        "logs_rel": "results/ingestion_logs"
+    },
+    "neo4j_config": {
+        "uri": "neo4j+s://6686060a.databases.neo4j.io",
+        "auth_user": "neo4j"
+    },
+    "chunking": {
+        "method": "semantic",
+        "threshold_type": "percentile", 
+        "threshold_amount": 90
+    }
+}

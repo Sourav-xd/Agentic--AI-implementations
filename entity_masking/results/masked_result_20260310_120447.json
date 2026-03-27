@@ -1,0 +1,108 @@
+{
+  "masked_text": "\n    [ORG] [LOCATION]\n    Dependents are defined as the employee\u2019s spouse and/or unmarried children [DATE].\n    [ORG] may cover the costs for dependents\u2019 visa status or work authorization, but [NAME] a case-by-case basis.\n    If [ORG] chooses not to cover dependent costs, the employee will be notified as soon as possible so they can prepare the necessary documents.\n    Dependents can still use [ORG]\u2019s immigration attorney [LOCATION] fee rate negotiated for the company, even if [ORG] does not cover their costs.\n    For visa stamping at a [ORG], [ORG] will cover the costs for dependents only [LOCATION] (e.g., [ORG], E-3, [ORG], H-1B1), but not for travel expenses.\n    If a visa stamp is needed after USCIS approval, [ORG] will not cover consulate visa costs for dependents, but the discounted attorney rate still [PERSON].\n    ",
+  "entities": [
+    {
+      "type": "ORG",
+      "start": 5,
+      "end": 44,
+      "value": "Criteria for Dependent Visa Sponsorship"
+    },
+    {
+      "type": "LOCATION",
+      "start": 45,
+      "end": 54,
+      "value": "at Dentsu"
+    },
+    {
+      "type": "DATE",
+      "start": 133,
+      "end": 151,
+      "value": "under 21 years old"
+    },
+    {
+      "type": "ORG",
+      "start": 157,
+      "end": 163,
+      "value": "Dentsu"
+    },
+    {
+      "type": "NAME",
+      "start": 239,
+      "end": 257,
+      "value": "this is decided on"
+    },
+    {
+      "type": "ORG",
+      "start": 287,
+      "end": 293,
+      "value": "Dentsu"
+    },
+    {
+      "type": "ORG",
+      "start": 456,
+      "end": 462,
+      "value": "Dentsu"
+    },
+    {
+      "type": "LOCATION",
+      "start": 486,
+      "end": 504,
+      "value": "at the same annual"
+    },
+    {
+      "type": "ORG",
+      "start": 550,
+      "end": 556,
+      "value": "Dentsu"
+    },
+    {
+      "type": "ORG",
+      "start": 612,
+      "end": 626,
+      "value": "U.S. Consulate"
+    },
+    {
+      "type": "ORG",
+      "start": 628,
+      "end": 634,
+      "value": "Dentsu"
+    },
+    {
+      "type": "LOCATION",
+      "start": 676,
+      "end": 692,
+      "value": "in certain cases"
+    },
+    {
+      "type": "ORG",
+      "start": 700,
+      "end": 709,
+      "value": "Blanket L"
+    },
+    {
+      "type": "ORG",
+      "start": 716,
+      "end": 718,
+      "value": "TN"
+    },
+    {
+      "type": "ORG",
+      "start": 809,
+      "end": 815,
+      "value": "Dentsu"
+    },
+    {
+      "type": "PERSON",
+      "start": 907,
+      "end": 915,
+      "value": "applies1"
+    }
+  ],
+  "stats": {
+    "ORG": 10,
+    "LOCATION": 3,
+    "DATE": 1,
+    "NAME": 1,
+    "PERSON": 1
+  }
+}

@@ -1,0 +1,62 @@
+models:
+  default_search: "sentence-transformers/all-MiniLM-L6-v2"
+  large_multilingual: "BAAI/bge-m3"
+
+  task_01_search: "sentence-transformers/all-MiniLM-L6-v2"
+  task_02_qa: "sentence-transformers/multi-qa-mpnet-base-dot-v1"
+  task_03_classification: "sentence-transformers/all-MiniLM-L6-v2"
+  task_04_clustering: "sentence-transformers/all-MiniLM-L6-v2"
+  task_05_recommender: "sentence-transformers/all-MiniLM-L6-v2"
+  task_06_summarization: "sentence-transformers/all-MiniLM-L6-v2"
+  task_07_crosslingual: "BAAI/bge-m3"
+  task_08_zeroshot: "sentence-transformers/all-mpnet-base-v2"
+  task_09_mlm: "distilbert-base-uncased"
+  task_10_compression: "sentence-transformers/all-MiniLM-L6-v2"
+
+
+  # Semantic Search
+  semantic_search:
+    small: sentence-transformers/all-MiniLM-L6-v2
+    large: sentence-transformers/all-mpnet-base-v2
+
+  # QA Retrieval
+  qa_retrieval:
+    default: sentence-transformers/multi-qa-mpnet-base-dot-v1
+    fast: sentence-transformers/multi-qa-MiniLM-L6-cos-v1
+
+  # Text Classification Encoder
+  classification_encoder:
+    default: sentence-transformers/all-MiniLM-L6-v2
+    high_accuracy: sentence-transformers/all-mpnet-base-v2
+
+  # Summarization Encoder
+  summarization_encoder:
+    default: sentence-transformers/all-MiniLM-L6-v2
+    semantic_heavy: sentence-transformers/all-mpnet-base-v2
+
+  # Multilingual / Cross-Lingual
+  multilingual_encoder:
+    default: BAAI/bge-m3
+    alternative: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+    lightweight: sentence-transformers/distiluse-base-multilingual-cased-v2
+
+  # config/config.yaml
+
+paths:
+  input_dir: "data/input"
+  output_dir: "data/output"
+
+
+
+task_settings:
+  clustering_k_int: 3
+  recommender_topk_int: 3
+  compression_dim_int: 3
+
+
+paths:
+  input_dir: "data/input"
+  output_dir: "data/output"
+  vector_store_dir: data/vector_store
+  model_dir: models/saved
+
